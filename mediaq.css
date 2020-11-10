@@ -1,0 +1,38 @@
+
+@media only screen and (orientation: landscape){
+	.container{
+		grid-template-columns: 3fr 1fr;
+	}
+	.left{
+		grid-row: 2;
+		grid-column: 2;
+	}
+	footer{
+		flex-direction: row-reverse;
+  justify-content: space-around;
+	}
+	.about{
+		display: block;
+	}
+	.about > a{
+		display: block;
+	}
+	.menu{
+		justify-content: flex-start;
+	}
+	.contform{
+		width: 35%;
+	}
+	.author{
+		width: 35%
+	}
+}
+
+@media only screen and (orientation: portrait){
+	.about{
+		display: none;
+	}
+	.menu{
+		justify-content: space-between;
+	}
+}
